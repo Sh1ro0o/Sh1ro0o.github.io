@@ -1,0 +1,83 @@
+html {
+    background-color: black;
+}
+
+.three-d-text {
+    text-shadow: 1px 1px #7a610e, 2px 2px #7a610e4d, 3px 3px #7a610e9c,
+    0 0 5px rgba(0, 0, 0, 0.329), 0 0 10px rgba(0, 0, 0, 0.514), 0 0 15px rgba(0, 0, 0, 0.733);
+    transform: rotateX(30deg);
+}
+
+.piano-button-text {
+    font-size: 4em;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0;
+    color: rgba(0, 0, 0, 0.76);
+}
+
+.piano-sharp-button-text {
+    font-size: 3em;
+    margin: 0;
+    color: rgba(236, 236, 236, 0.76);
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10%;
+}
+
+.piano-button {
+    height: 150px;
+    width: 100px;
+    background-color: gold;
+    border-radius: 25px;
+    border: 2px rgba(87, 73, 5, 0.473) solid;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+    animation: glowing 2s alternate ease-in-out infinite;
+    align-self: flex-end;
+    margin: 0 20px;
+}
+
+.piano-button-sharp {
+    height: 200px;
+    width: 50px;
+    margin: 100px 10px;
+    align-self: flex-start;
+    background-color: rgb(9, 15, 19);
+    border-radius: 25px;
+    border: none;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+    animation: glowing 2s alternate ease-in-out infinite;
+}
+  
+.piano-button-pressed {
+    background-color: rgb(68, 164, 255);
+    border: none;
+    box-shadow: 0 0 35px rgb(22, 239, 255), 0 0 35px rgb(12, 206, 255);
+    animation: splash 1s ease-out forwards;
+}
+
+.piano-button-pressed > .three-d-text
+{
+    text-shadow: 1px 1px #0c7981, 2px 2px #15919686, 3px 3px #23c4b69c,
+    0 0 5px rgba(0, 0, 0, 0.329), 0 0 10px rgba(0, 0, 0, 0.514), 0 0 15px rgba(0, 0, 0, 0.733);
+}
+
+@keyframes glowing {
+    0% { box-shadow: 0 0 25px rgb(182, 179, 0), 0 0 25px goldenrod }
+    50% { box-shadow: 0 0 35px rgb(231, 228, 9), 0 0 35px goldenrod }
+    100% { box-shadow: 0 0 50px rgb(253, 249, 0), 0 0 50px goldenrod }
+}
+
+@keyframes splash {
+    0% {
+        box-shadow: 0 0 0 0 cyan;
+    }
+    100% {
+        box-shadow: 0 0 50px 25px cyan;
+    }
+}
