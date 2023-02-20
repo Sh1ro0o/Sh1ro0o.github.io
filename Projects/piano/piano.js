@@ -1,18 +1,18 @@
 //regular
-const noteC = new Audio('assets/mp3 Notes/c3.mp3');
-const noteD = new Audio('assets/mp3 Notes/d3.mp3');
-const noteE = new Audio('assets/mp3 Notes/e3.mp3');
-const noteF = new Audio('assets/mp3 Notes/f3.mp3');
-const noteG = new Audio('assets/mp3 Notes/g3.mp3');
-const noteA = new Audio('assets/mp3 Notes/a4.mp3');
-const noteH = new Audio('assets/mp3 Notes/h4.mp3');
+const noteC = new Audio('/assets/mp3 Notes/c3.mp3');
+const noteD = new Audio('/assets/mp3 Notes/d3.mp3');
+const noteE = new Audio('/assets/mp3 Notes/e3.mp3');
+const noteF = new Audio('/assets/mp3 Notes/f3.mp3');
+const noteG = new Audio('/assets/mp3 Notes/g3.mp3');
+const noteA = new Audio('/assets/mp3 Notes/a4.mp3');
+const noteH = new Audio('/assets/mp3 Notes/h4.mp3');
 
 //sharp
-const noteCs = new Audio('assets/mp3 Notes/c-3.mp3');
-const noteDs = new Audio('assets/mp3 Notes/d-3.mp3');
-const noteFs = new Audio('assets/mp3 Notes/f-3.mp3');
-const noteGs = new Audio('assets/mp3 Notes/g-3.mp3');
-const noteAs = new Audio('assets/mp3 Notes/a-4.mp3');
+const noteCs = new Audio('/assets/mp3 Notes/c-3.mp3');
+const noteDs = new Audio('/assets/mp3 Notes/d-3.mp3');
+const noteFs = new Audio('/assets/mp3 Notes/f-3.mp3');
+const noteGs = new Audio('/assets/mp3 Notes/g-3.mp3');
+const noteAs = new Audio('/assets/mp3 Notes/a-4.mp3');
 
 
 //plays sound based on pressed key and adds class which colors the key
